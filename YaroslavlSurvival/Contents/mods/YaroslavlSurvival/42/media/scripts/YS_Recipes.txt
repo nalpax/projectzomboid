@@ -1,0 +1,222 @@
+module Yaroslavl
+{
+    imports
+    {
+        Base
+    }
+
+    /* ---------- Открыть пачки патронов ---------- */
+    craftRecipe YSOpenAmmo545Box
+    {
+        timedAction = OpenAmmoBox,
+        Time = 15,
+        category = Packing,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Yaroslavl.Ammo545Box],
+        }
+        outputs
+        {
+            item 30 Yaroslavl.Ammo545,
+        }
+    }
+
+    craftRecipe YSOpenAmmo762x39Box
+    {
+        timedAction = OpenAmmoBox,
+        Time = 15,
+        category = Packing,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Yaroslavl.Ammo762x39Box],
+        }
+        outputs
+        {
+            item 20 Yaroslavl.Ammo762x39,
+        }
+    }
+
+    craftRecipe YSOpenAmmo762x54RBox
+    {
+        timedAction = OpenAmmoBox,
+        Time = 15,
+        category = Packing,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Yaroslavl.Ammo762x54RBox],
+        }
+        outputs
+        {
+            item 20 Yaroslavl.Ammo762x54R,
+        }
+    }
+
+    craftRecipe YSOpenAmmo9x18Box
+    {
+        timedAction = OpenAmmoBox,
+        Time = 15,
+        category = Packing,
+        Tags = InHandCraft;CanBeDoneInDark,
+        inputs
+        {
+            item 1 [Yaroslavl.Ammo9x18Box],
+        }
+        outputs
+        {
+            item 16 Yaroslavl.Ammo9x18,
+        }
+    }
+
+    /* ---------- Ловушки ---------- */
+    craftRecipe YSMakeBearTrap
+    {
+        timedAction = Making,
+        Time = 400,
+        category = Trapping,
+        SkillRequired = Blacksmith:2,
+        xpAward = Blacksmith:25,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 4 [Base.ScrapMetal],
+            item 1 tags[base:hammer] mode:keep,
+        }
+        outputs
+        {
+            item 1 Yaroslavl.BearTrap,
+        }
+    }
+
+    craftRecipe YSMakeTripwire
+    {
+        timedAction = Making,
+        Time = 120,
+        category = Trapping,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 1 [Base.Twine],
+            item 2 [Base.TinCanEmpty],
+        }
+        outputs
+        {
+            item 1 Yaroslavl.TripwireCans,
+        }
+    }
+
+    craftRecipe YSMakeSpikeBoard
+    {
+        timedAction = Making,
+        Time = 200,
+        category = Carpentry,
+        SkillRequired = Woodwork:1,
+        xpAward = Woodwork:10,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 1 [Base.Plank],
+            item 8 [Base.Nails],
+            item 1 tags[base:hammer] mode:keep,
+        }
+        outputs
+        {
+            item 1 Yaroslavl.SpikeBoard,
+        }
+    }
+
+    /* ---------- Видеонаблюдение ---------- */
+    craftRecipe YSMakeCamera
+    {
+        timedAction = Making,
+        Time = 300,
+        category = Electrical,
+        SkillRequired = Electricity:2,
+        xpAward = Electricity:20,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 3 [Base.ElectronicsScrap],
+            item 1 [Base.Battery],
+            item 1 tags[base:screwdriver] mode:keep,
+        }
+        outputs
+        {
+            item 1 Yaroslavl.SecurityCamera,
+        }
+    }
+
+    craftRecipe YSMakeMonitor
+    {
+        timedAction = Making,
+        Time = 400,
+        category = Electrical,
+        SkillRequired = Electricity:3,
+        xpAward = Electricity:30,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 6 [Base.ElectronicsScrap],
+            item 1 [Base.Battery],
+            item 1 tags[base:screwdriver] mode:keep,
+        }
+        outputs
+        {
+            item 1 Yaroslavl.CameraMonitor,
+        }
+    }
+
+    /* ---------- Разобрать интерьер ---------- */
+    craftRecipe YSCutCarpet
+    {
+        timedAction = Making,
+        Time = 150,
+        category = Tailoring,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 1 [Yaroslavl.WallCarpet],
+            item 1 tags[base:sharpknife] mode:keep,
+        }
+        outputs
+        {
+            item 8 Base.RippedSheets,
+        }
+    }
+
+    craftRecipe YSDismantleOkean
+    {
+        timedAction = Making,
+        Time = 200,
+        category = Electrical,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 1 [Yaroslavl.OkeanRadio],
+            item 1 tags[base:screwdriver] mode:keep,
+        }
+        outputs
+        {
+            item 4 Base.ElectronicsScrap,
+        }
+    }
+
+    craftRecipe YSDismantleSamovar
+    {
+        timedAction = Making,
+        Time = 200,
+        category = Blacksmith,
+        Tags = InHandCraft,
+        inputs
+        {
+            item 1 [Yaroslavl.Samovar],
+            item 1 tags[base:hammer] mode:keep,
+        }
+        outputs
+        {
+            item 5 Base.ScrapMetal,
+        }
+    }
+}

@@ -1,0 +1,181 @@
+/* Ярославль: Выживание — ловушки, камеры, вещи и интерьер */
+module Yaroslavl
+{
+    imports
+    {
+        Base
+    }
+
+    /* ================= Ловушки (ставятся через ПКМ → «Установить здесь») ================= */
+    item BearTrap
+    {
+        DisplayName = Капкан стальной,
+        DisplayCategory = Trapping,
+        ItemType = base:normal,
+        Icon = YS_BearTrap,
+        Weight = 3.0,
+        MetalValue = 40,
+        Tags = base:hasmetal,
+        WorldStaticModel = Trap_Snare,
+    }
+
+    item TripwireCans
+    {
+        DisplayName = Растяжка с консервными банками,
+        DisplayCategory = Trapping,
+        ItemType = base:normal,
+        Icon = YS_Tripwire,
+        Weight = 0.6,
+        WorldStaticModel = TinCan,
+    }
+
+    item SpikeBoard
+    {
+        DisplayName = Доска с гвоздями,
+        DisplayCategory = Trapping,
+        ItemType = base:normal,
+        Icon = YS_SpikeBoard,
+        Weight = 2.5,
+        WorldStaticModel = Plank,
+    }
+
+    /* ================= Камеры наблюдения ================= */
+    item SecurityCamera
+    {
+        DisplayName = Камера наблюдения,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Icon = YS_Camera,
+        Weight = 1.0,
+        MetalValue = 10,
+        Tags = base:hasmetal,
+    }
+
+    item CameraMonitor
+    {
+        DisplayName = Монитор видеонаблюдения,
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Icon = YS_Monitor,
+        Weight = 2.0,
+        MetalValue = 10,
+        Tags = base:hasmetal,
+    }
+
+    /* ================= Вещи ================= */
+    item AI2
+    {
+        DisplayName = Аптечка индивидуальная АИ-2,
+        DisplayCategory = FirstAid,
+        ItemType = base:container,
+        Icon = YS_AI2,
+        Weight = 0.2,
+        Capacity = 2,
+        WeightReduction = 20,
+        OpenSound = OpenBag,
+        CloseSound = CloseBag,
+        PutInSound = PutItemInBag,
+        Tags = base:holdgeneral,
+    }
+
+    item ArmyBag
+    {
+        DisplayName = Вещмешок армейский,
+        DisplayCategory = Bag,
+        ItemType = base:container,
+        Icon = YS_Veshmeshok,
+        Weight = 0.6,
+        Capacity = 16,
+        WeightReduction = 60,
+        RunSpeedModifier = 0.97,
+        OpenSound = OpenBag,
+        CloseSound = CloseBag,
+        PutInSound = PutItemInBag,
+        Tags = base:holdgeneral,
+    }
+
+    item GazetaSevKray
+    {
+        DisplayName = Газета «Северный край»,
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Icon = YS_Gazeta,
+        Weight = 0.1,
+        BoredomChange = -15,
+        UnhappyChange = -5,
+        StressChange = -5,
+    }
+
+    item KrokodilMag
+    {
+        DisplayName = Журнал «Крокодил»,
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Icon = YS_Krokodil,
+        Weight = 0.1,
+        BoredomChange = -30,
+        UnhappyChange = -20,
+        StressChange = -10,
+    }
+
+    item SurvivalBook
+    {
+        DisplayName = Брошюра «Действия населения при ЧС»,
+        DisplayCategory = Literature,
+        ItemType = base:literature,
+        Icon = YS_Brochure,
+        Weight = 0.2,
+        BoredomChange = -10,
+        StressChange = -15,
+    }
+
+    /* ================= Интерьер (ценный хлам и материалы) ================= */
+    item Samovar
+    {
+        DisplayName = Самовар тульский,
+        DisplayCategory = Household,
+        ItemType = base:normal,
+        Icon = YS_Samovar,
+        Weight = 4.0,
+        MetalValue = 60,
+        Tags = base:hasmetal,
+    }
+
+    item WallCarpet
+    {
+        DisplayName = Ковёр настенный,
+        DisplayCategory = Household,
+        ItemType = base:normal,
+        Icon = YS_Carpet,
+        Weight = 3.0,
+    }
+
+    item CrystalVase
+    {
+        DisplayName = Хрустальная ваза,
+        DisplayCategory = Household,
+        ItemType = base:normal,
+        Icon = YS_Crystal,
+        Weight = 1.0,
+    }
+
+    item OkeanRadio
+    {
+        DisplayName = Радиоприёмник «Океан» (сломан),
+        DisplayCategory = Electronics,
+        ItemType = base:normal,
+        Icon = YS_Okean,
+        Weight = 3.5,
+        MetalValue = 15,
+        Tags = base:hasmetal,
+    }
+
+    item YaroslavlMagnet
+    {
+        DisplayName = Магнит «Ярославль — 1000 лет»,
+        DisplayCategory = Household,
+        ItemType = base:normal,
+        Icon = YS_Magnet,
+        Weight = 0.05,
+    }
+}

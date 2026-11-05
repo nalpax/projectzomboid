@@ -1,0 +1,154 @@
+module Yaroslavl
+{
+    imports
+    {
+        Base
+    }
+
+    /* ---------- Патроны ---------- */
+    item Ammo545
+    {
+        DisplayName = Патрон 5,45x39,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Count = 5,
+        Weight = 0.015,
+        Icon = YS_Ammo545,
+        MetalValue = 1,
+        StaticModel = RifleBullet,
+        WorldStaticModel = RifleAmmo,
+        Tags = base:ammo,
+    }
+
+    item Ammo762x39
+    {
+        DisplayName = Патрон 7,62x39,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Count = 5,
+        Weight = 0.02,
+        Icon = YS_Ammo762x39,
+        MetalValue = 1,
+        StaticModel = RifleBullet,
+        WorldStaticModel = RifleAmmo,
+        Tags = base:ammo,
+    }
+
+    item Ammo762x54R
+    {
+        DisplayName = Патрон 7,62x54R,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Count = 5,
+        Weight = 0.025,
+        Icon = YS_Ammo762x54R,
+        MetalValue = 1,
+        StaticModel = RifleBullet,
+        WorldStaticModel = RifleAmmo,
+        Tags = base:ammo,
+    }
+
+    item Ammo9x18
+    {
+        DisplayName = Патрон 9x18 ПМ,
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Count = 5,
+        Weight = 0.01,
+        Icon = YS_Ammo9x18,
+        MetalValue = 1,
+        StaticModel = Bullet,
+        WorldStaticModel = 9mmRounds,
+        Tags = base:ammo,
+    }
+
+    /* ---------- Пачки ---------- */
+    item Ammo545Box
+    {
+        DisplayName = Пачка патронов 5,45x39 (30 шт.),
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.45,
+        Icon = YS_Ammo545Box,
+        MetalValue = 30,
+        StaticModel = 556BulletsAmmobox,
+        WorldStaticModel = 556BulletsAmmobox,
+        DoubleClickRecipe = YSOpenAmmo545Box,
+        Tags = base:ammo,
+    }
+
+    item Ammo762x39Box
+    {
+        DisplayName = Пачка патронов 7,62x39 (20 шт.),
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.4,
+        Icon = YS_Ammo762x39Box,
+        MetalValue = 30,
+        StaticModel = 556BulletsAmmobox,
+        WorldStaticModel = 556BulletsAmmobox,
+        DoubleClickRecipe = YSOpenAmmo762x39Box,
+        Tags = base:ammo,
+    }
+
+    item Ammo762x54RBox
+    {
+        DisplayName = Пачка патронов 7,62x54R (20 шт.),
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.5,
+        Icon = YS_Ammo762x54RBox,
+        MetalValue = 30,
+        StaticModel = 556BulletsAmmobox,
+        WorldStaticModel = 556BulletsAmmobox,
+        DoubleClickRecipe = YSOpenAmmo762x54RBox,
+        Tags = base:ammo,
+    }
+
+    item Ammo9x18Box
+    {
+        DisplayName = Пачка патронов 9x18 (16 шт.),
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.2,
+        Icon = YS_Ammo9x18Box,
+        MetalValue = 20,
+        StaticModel = Bullets9mmAmmobox,
+        WorldStaticModel = Bullets9mmAmmobox,
+        DoubleClickRecipe = YSOpenAmmo9x18Box,
+        Tags = base:ammo,
+    }
+
+    /* ---------- Магазины ---------- */
+    item AK74Mag
+    {
+        DisplayName = Магазин АК-74 (30),
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.35,
+        Icon = YS_AK74Mag,
+        AmmoType = yaroslavl:bullets_545x39,
+        CanStack = false,
+        GunType = Yaroslavl.AK74,
+        MaxAmmo = 30,
+        StaticModel = STANAG_Magazine,
+        WorldStaticModel = STANAGMag,
+        Tags = base:hasmetal;base:riflemagazine,
+    }
+
+    item PMMag
+    {
+        DisplayName = Магазин ПМ (8),
+        DisplayCategory = Ammo,
+        ItemType = base:normal,
+        Weight = 0.1,
+        Icon = YS_PMMag,
+        AmmoType = yaroslavl:bullets_9x18,
+        CanStack = false,
+        GunType = Yaroslavl.PM,
+        MaxAmmo = 8,
+        StaticModel = GunMagazine,
+        WorldStaticModel = Glock_Mag,
+        Tags = base:hasmetal;base:pistolmagazine,
+    }
+}

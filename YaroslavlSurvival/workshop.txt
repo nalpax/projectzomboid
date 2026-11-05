@@ -1,0 +1,6 @@
+version=1
+workshopid=0
+title=Yaroslavl Survival (Ярославль: Выживание)
+description=Русский контент для сборки «Ярославль»: советское оружие, продукты, вещи, ловушки, камеры наблюдения и частично заброшенные дома. Build 42.
+visibility=unlisted
+tags=Build 42;Items;Weapons;Food;Misc

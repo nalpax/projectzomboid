@@ -1,0 +1,193 @@
+/* Ярославль: Выживание — советские и русские продукты */
+module Yaroslavl
+{
+    imports
+    {
+        Base
+    }
+
+    item Tushenka
+    {
+        DisplayName = Тушёнка говяжья (ГОСТ),
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Icon = YS_Tushenka,
+        Weight = 0.5,
+        HungerChange = -30,
+        UnhappyChange = -5,
+        Calories = 650,
+        Carbohydrates = 0,
+        Lipids = 45,
+        Proteins = 55,
+        Packaged = TRUE,
+        CannedFood = TRUE,
+        WorldStaticModel = TinCan,
+    }
+
+    item Sgushenka
+    {
+        DisplayName = Сгущёнка «Рогачёвъ»,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Icon = YS_Sgushenka,
+        Weight = 0.4,
+        HungerChange = -15,
+        UnhappyChange = -25,
+        BoredomChange = -10,
+        Calories = 1200,
+        Carbohydrates = 210,
+        Lipids = 32,
+        Proteins = 28,
+        Packaged = TRUE,
+        CannedFood = TRUE,
+        WorldStaticModel = TinCan,
+    }
+
+    item Kilka
+    {
+        DisplayName = Килька в томатном соусе,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Icon = YS_Kilka,
+        Weight = 0.25,
+        HungerChange = -15,
+        Calories = 400,
+        Carbohydrates = 10,
+        Lipids = 25,
+        Proteins = 30,
+        Packaged = TRUE,
+        CannedFood = TRUE,
+        WorldStaticModel = TinCan,
+    }
+
+    item BorodinskyBread
+    {
+        DisplayName = Хлеб «Бородинский»,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Icon = YS_Borodinsky,
+        Weight = 0.4,
+        HungerChange = -25,
+        Calories = 900,
+        Carbohydrates = 170,
+        Lipids = 5,
+        Proteins = 30,
+        DaysFresh = 4,
+        DaysTotallyRotten = 9,
+        Packaged = TRUE,
+        WorldStaticModel = Bread,
+    }
+
+    item Sushki
+    {
+        DisplayName = Сушки с маком,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Icon = YS_Sushki,
+        Weight = 0.2,
+        HungerChange = -10,
+        ThirstChange = 5,
+        BoredomChange = -5,
+        Calories = 700,
+        Carbohydrates = 140,
+        Lipids = 8,
+        Proteins = 20,
+        Packaged = TRUE,
+    }
+
+    item Grechka
+    {
+        DisplayName = Гречка (пачка),
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Icon = YS_Grechka,
+        Weight = 0.9,
+        HungerChange = -20,
+        UnhappyChange = 15,
+        BoredomChange = 10,
+        ThirstChange = 15,
+        Calories = 1300,
+        Carbohydrates = 280,
+        Lipids = 15,
+        Proteins = 50,
+        Packaged = TRUE,
+    }
+
+    item Kvas
+    {
+        DisplayName = Квас «Очаковский»,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Icon = YS_Kvas,
+        Weight = 1.0,
+        HungerChange = -3,
+        ThirstChange = -45,
+        UnhappyChange = -10,
+        Calories = 270,
+        Carbohydrates = 60,
+        Lipids = 0,
+        Proteins = 2,
+        Packaged = TRUE,
+        CustomContextMenu = Drink,
+        CustomEatSound = DrinkingFromBottlePlastic,
+        WorldStaticModel = PopBottle,
+    }
+
+    item Vodka
+    {
+        DisplayName = Водка «Столичная»,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Icon = YS_Vodka,
+        Weight = 0.8,
+        HungerChange = 0,
+        ThirstChange = 10,
+        UnhappyChange = -30,
+        StressChange = -30,
+        Calories = 1100,
+        Carbohydrates = 0,
+        Lipids = 0,
+        Proteins = 0,
+        Alcoholic = TRUE,
+        AlcoholPower = 3,
+        Packaged = TRUE,
+        CustomContextMenu = Drink,
+        CustomEatSound = DrinkingFromBottleGlass,
+        WorldStaticModel = WhiskeyBottle,
+    }
+
+    item Alenka
+    {
+        DisplayName = Шоколад «Алёнка»,
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Icon = YS_Alenka,
+        Weight = 0.1,
+        HungerChange = -8,
+        UnhappyChange = -20,
+        BoredomChange = -10,
+        StressChange = -5,
+        Calories = 550,
+        Carbohydrates = 55,
+        Lipids = 34,
+        Proteins = 6,
+        Packaged = TRUE,
+    }
+
+    item IRP
+    {
+        DisplayName = Сухпаёк ИРП (армейский),
+        DisplayCategory = Food,
+        ItemType = base:food,
+        Icon = YS_IRP,
+        Weight = 1.6,
+        HungerChange = -60,
+        ThirstChange = -10,
+        UnhappyChange = -10,
+        Calories = 3200,
+        Carbohydrates = 400,
+        Lipids = 110,
+        Proteins = 150,
+        Packaged = TRUE,
+    }
+}
